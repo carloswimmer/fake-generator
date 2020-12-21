@@ -1,15 +1,18 @@
 # fake-generator
+
 Project to generate sample data to work on frontend projects before API is ready.
 
 ## Usage
-* Create in `generators` a JS file especifying into `casual.define`:
-  * first argument - name of function to be resolved.
-  * callback - the keys and the `casual` type of data.
 
-* In `resolver`:
-  * number of registers of your sample data.
-  * `casual._` + name of the function to be resolved
-  
+- Create in `generators` a JS file especifying into `casual.define`:
+
+  - first argument - name of function to be resolved.
+  - callback - the keys and the `casual` type of data.
+
+- In `resolver`:
+  - number of registers of your sample data.
+  - `casual._` + name of the function to be resolved
+
 ```javascript
 import casual from "casual";
 import { resolver } from "../helper/resolver-bash.js";
@@ -31,10 +34,11 @@ resolver(10, casual._appointmentsRis);
 ```
 
 ## Casual Generators
+
 See all the possibilities of generator types in [Casual README.md](https://github.com/boo1ean/casual) .
 
 ## Running the Generator
-Create in `package.json` a script calling your JS file, and run it on terminal:
+
 ```bash
-npm run mygenerator
+npm run generator --file=nameOfMyFile.js
 ```
