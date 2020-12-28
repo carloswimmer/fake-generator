@@ -7,7 +7,7 @@ const format = "YYYY-MM-DD";
 const genre = ["M", "F"];
 const maritalStatus = ["CASADO(A)", "SOLTEIRO(A)", "SEPARADO(A)", "VIUVO(A)"];
 const educationLevel = [
-  "eEM_EducationLevel",
+  "SEM_ESCOLARIDADE",
   "FUNDAMENTAL",
   "ENSINO_MEDIO",
   "ENSINO_SUPERIOR",
